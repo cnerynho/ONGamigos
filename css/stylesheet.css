@@ -1,0 +1,55 @@
+body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	;
+}
+
+#formLogin{
+	position: absolute;
+	top: 12em;
+	left: 25em;
+	width: 40em;
+}
+
+#formCadastro {
+	position: absolute;
+	top: 5em;
+	left: 25em;
+	width: 40em;
+}
+
+.inputTexto{
+	font-size: 12px;
+	width: 100%;
+	height: 2em;
+	outline-color: green;
+	margin-bottom: 2em;
+	margin-top: 0.50em;
+}
+
+.label{
+	font-size: 18px;
+}
+
+.menuTopo{
+	overflow: auto;
+}
+.menuTopo ul li{
+	display: inline;
+	margin-right: 1em;
+}
+
+.menuTopo ul{
+	width: 70%;
+}
+
+.menuTopo ul li a{
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.btn{
+	float: right;
+	width: 10em;
+	padding: 0.25em 1em 0.25em 1em;
+	font-size: 16px;
+	font-weight: bold; 
+}
