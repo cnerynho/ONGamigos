@@ -2,14 +2,14 @@ body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	;
 }
 
-#formLogin{
+.centralizado{
 	position: absolute;
 	top: 12em;
 	left: 25em;
 	width: 40em;
 }
 
-#formCadastro {
+#cadastroContainer {
 	position: absolute;
 	top: 5em;
 	left: 25em;
@@ -20,13 +20,16 @@ body{
 	font-size: 12px;
 	width: 100%;
 	height: 2em;
-	outline-color: green;
-	margin-bottom: 2em;
+	margin-bottom: 0.50em;
 	margin-top: 0.50em;
+	padding: 4px 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 
 .label{
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .menuTopo{
@@ -45,11 +48,35 @@ body{
 	text-decoration: none;
 	letter-spacing: 1px;
 }
+#btn-login{
+	float: right;
+}
+
+#btn-cadastro{
+	width: 50%;
+	margin-left: 25%;
+}
 
 .btn{
-	float: right;
 	width: 10em;
 	padding: 0.25em 1em 0.25em 1em;
 	font-size: 16px;
 	font-weight: bold; 
+	border: 1px solid transparent;
+	border-radius: 6px;
+}
+
+.btn-escolhaCadastro{
+	color: #FFFFFF;
+	width: 100%;
+	padding: 1em 1em 1em 1em;
+	font-size: 16px;
+	margin-top: 2em;
+	font-weight: bold; 
+	border: 1px solid transparent;
+	border-radius: 6px;
+	background-color: #4CAF50;
+}
+.btn-escolhaCadastro:hover{
+	background-color: #3e8e41;
 }
