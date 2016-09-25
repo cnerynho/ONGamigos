@@ -32,21 +32,31 @@ body{
 	font-size: 14px;
 }
 
-.menuTopo{
-	overflow: auto;
-}
-.menuTopo ul li{
-	display: inline;
-	margin-right: 1em;
-}
-
 .menuTopo ul{
-	width: 70%;
+	height: 3.5em;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4CAF50;
 }
 
-.menuTopo ul li a{
+.menuTopo li{
+	float: left;
+}
+
+.menuTopo a{
+	display: inline-block;
 	text-decoration: none;
 	letter-spacing: 1px;
+	color: #FFFFFF;
+	transition: 0.5s;
+	padding: 1em 1em;
+	text-align: center;
+}
+
+.menuTopo a:hover{
+	background-color: #3e8e41;
 }
 #btn-login{
 	float: right;
@@ -58,12 +68,13 @@ body{
 }
 
 .btn{
+	color: #FFFFFF;
 	width: 10em;
 	padding: 0.25em 1em 0.25em 1em;
 	font-size: 16px;
-	font-weight: bold; 
 	border: 1px solid transparent;
 	border-radius: 6px;
+	background-color: #4CAF50;
 }
 
 .btn-escolhaCadastro{
@@ -76,7 +87,15 @@ body{
 	border: 1px solid transparent;
 	border-radius: 6px;
 	background-color: #4CAF50;
+	transition: 0.3s;
 }
 .btn-escolhaCadastro:hover{
 	background-color: #3e8e41;
+	cursor: pointer;
+}
+
+.objetoMenu{
+	margin-top: -0.5em;
+	height: 5em;
+	width: 100%;
 }
