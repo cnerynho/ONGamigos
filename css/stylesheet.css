@@ -13,9 +13,16 @@ a{
 	width: 40em;
 }
 
-#cadastroContainer {
+#cadastroColaboradorContainer {
 	position: absolute;
-	top: 5em;
+	top: 4em;
+	left: 25em;
+	width: 40em;
+}
+
+#cadastroOngContainer{
+	position: absolute;
+	top: 6em;
 	left: 25em;
 	width: 40em;
 }
@@ -24,8 +31,7 @@ a{
 	font-size: 12px;
 	width: 100%;
 	height: 2em;
-	margin-bottom: 0.50em;
-	margin-top: 0.50em;
+	margin-bottom: 0.25em;
 	padding: 4px 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -161,3 +167,40 @@ a{
 	height: 5em;
 	width: 100%;
 }
+
+.listaCheckbox{
+	padding: 0;
+	margin: 0;
+}
+
+.listaCheckbox li{
+	font-size: 12px;
+	display: inline;
+}
+
+.tabela{
+	border-collapse: collapse;
+    width: 100%;
+}
+
+.tabela th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela tr:hover {
+	background-color: #f5f5f5
+}
+
+.alertaSucesso{
+	width: 70em;
+	opacity: 1;
+	margin-left: 15px;
+    color: #3c763d;
+    font-size: 14px;
+    line-height: 20px;
+	padding: 20px;
+    background-color: #dff0d8;
+}
+

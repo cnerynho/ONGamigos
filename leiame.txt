@@ -1,5 +1,13 @@
 https://github.com/cnerynho/ONGamigos
 
+Processo de configuração do website: 
+
+Baixar arquivos pelo link do github acima.
+Inserir arquivos baixados no diretório apropriado em um servidor web.
+
+
+Integrantes: 
 > CARLOS HENRIQUE DA ROCHA NERY (cnerynho@gmail.com)
 > Francisco Emanuel de Sales Pereira (francisco.emanuel@hotmail.com.br)
 > Igor Matheus Barros Moreira (igor.mbm@hotmail.com)
+

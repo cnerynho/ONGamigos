@@ -7,7 +7,7 @@
 </head>
 <body>
 	<object class="objetoMenu" type="text/html" data="menuSuperior.html"></object>
-	<div id="cadastroContainer">
+	<div id="cadastroColaboradorContainer">
 		<form method="POST">
 			<label class="label">Nome Completo: </label>
 			<input placeholder="Ex: José da Silva Santos" class="inputTexto" type="text" name="nome" maxlength="60" required/>
@@ -19,6 +19,19 @@
 			<input placeholder = "Ex: Rua Santa Amalia - 127, Tabuleiro Do Martins" class="inputTexto" type="text"/>
 			<label class="label">Telefone: </label>
 			<input placeholder="(xx) xxxxx-xxxx" class="inputTexto" type="text" name="telefoneColab" maxlength="14" required/>
+			<label class="label">Habilidades:</label>
+			<ul class="listaCheckbox">
+				<li><input type="checkbox" name="CuidadoComanimais">Cuidado com animais</li>
+				<li><input type="checkbox" name="CuidadoComIdoso">Cuidado com Idoso</li>
+				<li><input type="checkbox" name="ContatoComcrianças">Contato com crianças</li>
+			</ul>
+			<label class="label">Área de atuação:</label>
+				<ul class="listaCheckbox">
+					<li><input type="checkbox" name="veterinario">Veterinário</li>
+					<li><input type="checkbox" name="enfermeiro">Enfermeiro</li>
+					<li><input type="checkbox" name="instrutorArtesMarciais">Instrutor de artes marciais</li>
+				</ul>
+			</label>
 			<label class="label">Senha:</label>
 			<input placeholder="Senha de até 12 caracteres" class="inputTexto" type="password" name="senha" maxlength="12" required />
 			<label class="label">Confirme sua senha:</label>

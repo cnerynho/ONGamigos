@@ -7,7 +7,7 @@
 </head>
 <body>
 	<object class="objetoMenu" type="text/html" data="menuSuperior.html"></object>
-	<div id="cadastroContainer">
+	<div id="cadastroOngContainer">
 		<form method="POST">
 			<label class="label">Razão Social: </label>
 			<input placeholder="Ex: ASSOCIAÇÃO BENEFICIENTE SAO BENEDITO" class="inputTexto" type="text" name="razaoSocial" maxlength="60" required/>
@@ -18,7 +18,13 @@
 			<label class="label">Email da ong: </label>
 			<input placeholder="Ex: AssociacaoBeneficienteSaoBenedito@uol.com.br" class="inputTexto" type="text" name="emailOng" maxlength="60" required/>	
 			<label class="label">Telefone:</label>
-			<input placeholder="Ex: (xx) xxxxx-xxxx" class="inputTexto" type="text" name="telefoneOng" maxlength="60" required/>	
+			<input placeholder="Ex: (xx) xxxxx-xxxx" class="inputTexto" type="text" name="telefoneOng" maxlength="60" required/>
+			<label>Necessidades: </label>
+			<ul class="listaCheckbox">
+					<li><input type="checkbox" name="veterinario">Veterinário</li>
+					<li><input type="checkbox" name="enfermeiro">Enfermeiro</li>
+					<li><input type="checkbox" name="instrutorArtesMarciais">Instrutor de artes marciais</li>
+				</ul>	
 			<label class="label">Senha:</label>
 			<input placeholder="Senha de até 12 caracteres" class="inputTexto" type="password" name="senha" maxlength="12" required />
 			<label class="label">Confirme a senha:</label>
