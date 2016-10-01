@@ -11,6 +11,7 @@ a{
 	top: 12em;
 	left: 25em;
 	width: 40em;
+	border-color: #ddd;
 }
 
 #cadastroColaboradorContainer {
@@ -149,6 +150,7 @@ a{
 	border: 1px solid transparent;
 	border-radius: 6px;
 	background-color: #4CAF50;
+	cursor: pointer;
 }
 
 .btn-escolhaCadastro{
@@ -191,6 +193,7 @@ a{
 .tabela{
 	border-collapse: collapse;
     width: 100%;
+    font-size: 14px;
 }
 
 .tabela th, td {
@@ -214,3 +217,44 @@ a{
     background-color: #dff0d8;
 }
 
+.objetoNoticias{
+	width: 100%;
+	height: 253em;
+}
+
+.objetoSobreNos{
+	width: 100%;
+	height: 48em;
+}
+
+.objetoTabelaOngs{
+	width: 100%;
+	height: 30em;
+}
+
+.objetoDoacao{
+	width: 100%;
+	height: 30em;
+}
+
+.btn-doar{
+	background-color: #5bc0de;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 4px 8px;
+	text-align: center;
+	color: #fff;
+}
+
+.btn-doar:hover{
+	background-color: #279bbe
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
