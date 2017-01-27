@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Agência Amiga</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	</head>
+	<body>
+		<object class="objetoMenu" type="text/html" data="includes/menuConectado2.html"></object>
+		<object class="objetoNoticias" type="text/html" data="includes/noticias.html"></object>
+	</body>
+</html>

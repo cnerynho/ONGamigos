@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="./../../css/stylesheet.css">
+</head>
+<body>
+	<object class="objetoMenu" type="text/html" data="./../../includes/menuSuperior.html"></object>
+	<div id="cadastroColaboradorContainer">
+		<form method="POST">
+			<label class="label">Titulo da Campanha: </label>
+			<input placeholder="Ex: Arrecadação de Fundos" class="inputTexto" type="text" name="titulo" maxlength="60" required/>
+			<label class="label">ONG Responsavel: </label>
+			<input placeholder = "Ex: Amigos dos Amigos" class="inputTexto" type="text" name="nome" maxlength="60" required/>
+			<label class="label">Descrição da Campanha: </label><br>
+			<textarea rows="10" cols="50" placeholder = "Definir Objetivo e necessidades." class="inputTexto2" name="detalhes" 	required></textarea>
+			<br><label>Imagem da Campanha</label>
+			<input type="file" name="arquivo" id="ImagemCampanha" /><br><br>
+			<input id="btn-cadastro" class="btn" type="submit" value="Cadastrar"/>
+		</form>
+	</div>
+</body>
+</html>

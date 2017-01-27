@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="./../../css/stylesheet.css">
+</head>
+<body>
+<script>
+function validaSenha (input){ 
+	if (input.value != document.getElementById('txtSenha').value) {
+    input.setCustomValidity('As senhas não conferem');
+  } else {
+    input.setCustomValidity('');
+  }
+} 
+</script>
+	<object class="objetoMenu" type="text/html" data="/includes/menuSuperior.html"></object>
+	<div id="cadastroOngContainer">
+		<form method="POST" action="./cadastrarONG.php">
+			<label class="label">Razão Social: </label>
+			<input placeholder="Ex: ASSOCIAÇÃO BENEFICIENTE SAO BENEDITO" class="inputTexto" type="text" name="razaoSocial" maxlength="60" required/>
+			<label class="label">CNPJ: </label>
+			<input placeholder = "Ex: 35.742.220/0001-75" class="inputTexto" type="text" name="cnpj" maxlength="18" required/>
+			<label class="label">Endereço da ONG: </label>
+			<input placeholder = "Ex: RUA FIRMO CORREIA DE ARAUJO - 355, TABULEIRO DO MARTINS" class="inputTexto" type="text" name="endereco" maxlength="18" required/>
+			<label class="label">Email da ong: </label>
+			<input placeholder="Ex: AssociacaoBeneficienteSaoBenedito@uol.com.br" class="inputTexto" type="text" name="email" maxlength="60" required/>	
+			<label class="label">Telefone:</label>
+			<input placeholder="Ex: (xx) xxxxx-xxxx" class="inputTexto" type="text" name="telefone" maxlength="60" required/>
+			<label class="label">Digite sua senha:</label>
+			<input id = "txtSenha" placeholder="Senha de até 12 caracteres" class="inputTexto" type="password" name="senha" maxlength="12" required />
+			<label class="label">Confirme a senha:</label>
+			<input class="inputTexto" type="password" name="senha2" maxlength="12" required/>
+			<input id="btn-cadastro" class="btn" type="submit" value="Cadastrar"/>
+		</form>
+	</div>
+</body>
+</html>

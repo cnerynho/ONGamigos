@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pesquisar ONGs</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="./../../css/stylesheet.css"/>
+	</head>
+	<body>
+		<div>
+				<header>
+					<object class="objetoMenu" type="text/html" data="./../../includes/menuSuperior.html"></object>
+				</header>
+		</div>
+		<section>
+			<div class="sidebar">
+				<ul>
+					<h3>Consultar todos</h3>
+					<li><a href="./resultado">ONGs cadastradas</a></li>
+				</ul>
+			</div>
+			<div class="section">
+				<h3>Pesquisar detalhada:</h3>
+				<table>
+					<form action="#">
+						<tr><td><label class="label">NOME:</label></td></tr>
+						<tr><td><input type="text" class="inputTexto" placeholder="Nome da ONG"/></td></tr>
+						<tr><td><label class="label">CNPJ:</label></td></tr>
+						<tr><td><input type="text" class="inputTexto" placeholder="CNPJ da ONG"/></td></tr>
+						<tr><td><label class="label">NECESSIDADES:</label></td></tr>
+						<tr><td><input type="checkbox" class="inputCheckbox"/>Exemplo1
+						<input type="checkbox" class="inputCheckbox"/>Exemplo2
+						<input type="checkbox" class="inputCheckbox"/>Exemplo3</td></tr>
+						<tr><td><input type="submit" class="btn btn-pesquisar" value="Pesquisar"/></td></tr>
+					</form>
+				</table>
+			</div>
+		</section>
+		</div>
+	</body>
+</html>

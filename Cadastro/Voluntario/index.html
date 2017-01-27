@@ -3,41 +3,38 @@
 <head>
 	<title>Cadastro</title>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" type="text/css" href="./../../css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
 </head>
 <body>
-	<object class="objetoMenu" type="text/html" data="./../../menuSuperior.html"></object>
+<script>
+function validaSenha (input){ 
+	if (input.value != document.getElementById('txtSenha').value) {
+    input.setCustomValidity('As senhas não conferem');
+  } else {
+    input.setCustomValidity('');
+  }
+} 
+</script>
+	<object class="objetoMenu" type="text/html" data="/includes/menuSuperior.php"></object>
 	<div id="cadastroColaboradorContainer">
-		<form method="POST" action="./../../voluntarioConectado.html">
+		<form method="POST" action="./cadastrarVoluntario.php">
 			<label class="label">Nome Completo: </label>
 			<input placeholder="Ex: José da Silva Santos" class="inputTexto" type="text" name="nome" maxlength="60" required/>
 			<label class="label">CPF: </label>
 			<input placeholder = "Ex: 000.000.000-00" class="inputTexto" type="text" name="cpf" maxlength="14" required/>
 			<label class="label">Email: </label>
-			<input placeholder="Ex: Jose@bol.com.br" class="inputTexto" type="text" name="emailColab" maxlength="60" required/>
-			<label class="label">Endereço da ONG: </label>
-			<input placeholder = "Ex: Rua Santa Amalia - 127, Tabuleiro Do Martins" class="inputTexto" type="text"/>
+			<input placeholder="Ex: Jose@bol.com.br" class="inputTexto" type="text" name="email" maxlength="60" required/>
+			<label class="label">Endereço: </label>
+			<input placeholder = "Ex: Rua Santa Amalia - 127, Tabuleiro Do Martins" name="endereco" class="inputTexto" type="text"/>
 			<label class="label">Telefone: </label>
-			<input placeholder="(xx) xxxxx-xxxx" class="inputTexto" type="text" name="telefoneColab" maxlength="14" required/>
-			<label class="label">Habilidades:</label>
-			<ul class="listaCheckbox">
-				<li><input type="checkbox" name="CuidadoComanimais">Cuidado com animais</li>
-				<li><input type="checkbox" name="CuidadoComIdoso">Cuidado com Idoso</li>
-				<li><input type="checkbox" name="ContatoComcrianças">Contato com crianças</li>
-			</ul>
-			<label class="label">Área de atuação:</label>
-				<ul class="listaCheckbox">
-					<li><input type="checkbox" name="veterinario">Veterinário</li>
-					<li><input type="checkbox" name="enfermeiro">Enfermeiro</li>
-					<li><input type="checkbox" name="instrutorArtesMarciais">Instrutor de artes marciais</li>
-				</ul>
-			</label>
+			<input placeholder="(xx) xxxxx-xxxx" class="inputTexto" type="text" name="telefone" maxlength="14" required/>
 			<label class="label">Senha:</label>
-			<input placeholder="Senha de até 12 caracteres" class="inputTexto" type="password" name="senha" maxlength="12" required />
+			<input id = "txtSenha" placeholder="Senha de até 12 caracteres" class="inputTexto" type="password" name="senha" maxlength="12" required />
 			<label class="label">Confirme sua senha:</label>
-			<input class="inputTexto" type="password" name="senha2" maxlength="12" required/>
+			<input class="inputTexto" type="password" name="senha2" maxlength="12" required oninput="validaSenha(this)"/>
 			<input id="btn-cadastro" class="btn" type="submit" value="Cadastrar"/>
 		</form>
 	</div>
 </body>
 </html>
+

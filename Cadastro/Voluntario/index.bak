@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+</head>
+<body>
+<script>
+function validaSenha (input){ 
+	if (input.value != document.getElementById('txtSenha').value) {
+    input.setCustomValidity('As senhas não conferem');
+  } else {
+    input.setCustomValidity('');
+  }
+} 
+</script>
+	<object class="objetoMenu" type="text/html" data="/includes/menuSuperior.html"></object>
+	<div id="cadastroColaboradorContainer">
+		<form method="POST" action="./cadastrarVoluntario.php">
+			<label class="label">Nome Completo: </label>
+			<input placeholder="Ex: José da Silva Santos" class="inputTexto" type="text" name="nome" maxlength="60" required/>
+			<label class="label">CPF: </label>
+			<input placeholder = "Ex: 000.000.000-00" class="inputTexto" type="text" name="cpf" maxlength="14" required/>
+			<label class="label">Email: </label>
+			<input placeholder="Ex: Jose@bol.com.br" class="inputTexto" type="text" name="email" maxlength="60" required/>
+			<label class="label">Endereço: </label>
+			<input placeholder = "Ex: Rua Santa Amalia - 127, Tabuleiro Do Martins" name="endereco" class="inputTexto" type="text"/>
+			<label class="label">Telefone: </label>
+			<input placeholder="(xx) xxxxx-xxxx" class="inputTexto" type="text" name="telefone" maxlength="14" required/>
+			<label class="label">Senha:</label>
+			<input id = "txtSenha" placeholder="Senha de até 12 caracteres" class="inputTexto" type="password" name="senha" maxlength="12" required />
+			<label class="label">Confirme sua senha:</label>
+			<input class="inputTexto" type="password" name="senha2" maxlength="12" required oninput="validaSenha(this)"/>
+			<input id="btn-cadastro" class="btn" type="submit" value="Cadastrar"/>
+		</form>
+	</div>
+</body>
+</html>
+
