@@ -13,11 +13,11 @@ ini_set(“display_errors”, 0 );
 		<div class="menuTopo">
 		<ul>
 			<li><a href="/" target="_top">Pagina Inicial</a></li>
-			<li><a href="/pesquisar" target="_top">Pesquisar</a></li>
+			<li><a href="/Pesquisar" target="_top">Pesquisar</a></li>
 			<li><a href="/Cadastro" target="_top">Cadastrar</a></li>
-			<li><a href="/sobrenos" target="_top">Sobre nos</a></li>
+			<li><a href="/sobreNos" target="_top">Sobre nos</a></li>
 			<?php session_start();
-			if($_SESSION['tipo'] == 1 ||$_SESSION['tipo'] == 2){
+			if(isset($_SESSION['tipo'])){
 				echo "<li><a href=\"/logOut\" target=\"_top\">Sair</a></li>";
 			} else{
 				echo "<li><a href=\"/LogIn\" target=\"_top\">Login</a></li>";

@@ -34,7 +34,7 @@ if ($conn->query($sql) === TRUE) {
 		$idUsuario = $dados['id'];
 	}
 	$sql = "INSERT INTO `ong`(`razaoSocial`, `cnpj`, `endereco`, `email`, `telefone`, `ID_usuario`) 
-		VALUES ('$razaoSocial','$login','$email','$endereco','$telefone',$idUsuario);";
+		VALUES ('$razaoSocial','$login','$endereco','$email','$telefone',$idUsuario);";
 	if ($conn->query($sql) === TRUE) {
 		echo "	<meta http-equiv=\"refresh\" content=\"3;url=/\">
 	<div class=\"alertaSucesso\">

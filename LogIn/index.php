@@ -10,7 +10,7 @@ ini_set(“display_errors”, 0 );
 		<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
 	</head>
 	<body>
-	<object class="objetoMenu" type="text/html" data="/includes/menuSuperior.html"></object>
+	<object class="objetoMenu" type="text/html" data="/includes/menuSuperior.php"></object>
 	<div id="loginContainer" class="centralizado">
 		<form method="POST" action="./">
 			<label class="label">CNPJ/CPF: </label>
